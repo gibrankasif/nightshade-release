@@ -9,7 +9,7 @@ from torchvision import transforms
 
 
 class PoisonGeneration(object):
-    def __init__(self, target_concept, device, eps=0.05, num_opt_steps=250, sd_steps=25):
+    def __init__(self, target_concept, device, eps=0.05, num_opt_steps=500, sd_steps=50):
         self.eps = eps
         self.target_concept = target_concept
         self.device = device
